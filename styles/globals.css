@@ -27,6 +27,10 @@ body {
   @apply bg-[#13d3ec] px-8 py-3 rounded-md border-b-8 border-b-[#006b8b]  hover:bg-[#c1e9f5] font-bold text-2xl mx-auto text-black
 }
 
+.mint-page-btn-nmb {
+  @apply bg-[#13d3ec] px-8 py-3 rounded-md border-b-8 border-b-[#006b8b]  hover:bg-[#c1e9f5] font-bold text-2xl ml-2 text-black
+}
+
 .cards {
   transform: rotate(-45deg) rotate3d(1, 1, 0, -60deg);
 }

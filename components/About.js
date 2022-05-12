@@ -1,17 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
 import Typewriter from 'typewriter-effect'
-import card1 from '../images/card1.jpeg'
-import card2 from '../images/card2.jpeg'
-import card3 from '../images/card3.jpeg'
-import card4 from '../images/card4.jpeg'
-import card5 from '../images/card5.jpeg'
+import card1 from '../images/card1_.png'
+import card2 from '../images/card2_.png'
+import card3 from '../images/card3__.png'
+import card4 from '../images/card4_.png'
+import card5 from '../images/card5_.png'
 
 const About = () => {
   return (
     <div
       id="aboutus"
-      className="text-4xl text-white flex flex-col text-center w-full z-40 absolute top-[900px]  md:top-[1300px] lg:top-[1600px]"
+      className="text-4xl text-white flex flex-col text-center w-full z-40 absolute top-[1100px]  md:top-[1300px] xl:top-[1500px]"
     >
       <Typewriter
         options={{
@@ -21,13 +21,13 @@ const About = () => {
         }}
       />
       <p className="mt-12 text-xl tracking-wide leading-[1.9] mx-auto max-w-7xl">
-        Crypto Lions is a 9,999 unique NFT project, strictly designed to create
-        community. These algorithmically generated Lions are a gateway to a
-        world of endless possibilities, passive income and future community
-        oriented projects. We invite you to be apart of the Lion community and
+        Mana-Maniacs is a 10,000 unique NFT project, strictly designed to create
+        community. These algorithmically generated Maniacs are a gateway to a
+        world of endless possibilities and future community oriented projects. 
+        We invite you to be apart of the Lion community and 
         join likeminded individuals ready to be apart of the future.
       </p>
-      <div className="my-12 cards w-[400px] md:w-[550px] lg:w-[700px] xl:w-[950px] mx-auto">
+      <div className="my-12 cards w-[250px] md:w-[550px] lg:w-[700px] xl:w-[950px] mx-auto">
         <div className="flex mb-6 gap-x-6">
           <div className="card z-50">
             <Image src={card1} style={{ borderRadius: '10px' }} alt="card1" />

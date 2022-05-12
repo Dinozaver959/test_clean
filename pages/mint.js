@@ -10,7 +10,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
+import {Connect, CheckTotalSupply, Mint, CheckSaleActive} from "../JS/local_web3"
+
+
 const mint = () => {
+
   return (
     <>
       <div>
@@ -42,14 +46,28 @@ const mint = () => {
             transition={{ duration: 1 }}
             className="h-[60vh] absolute top-[20%] z-50 rounded-md w-10/12 mx-auto flex flex-col justify-center text-center max-w-[900px] shadow-md border-b-8 border-b-[#13d3ec] bg-black/50 text-white gap-y-4"
           >
-            <h1 className="text-4xl">0/9999</h1>
+            <h1 className="text-4xl">0/10000</h1>
             <span className="text-[#13d3ec] w-2/4 mx-auto hover:scale-110 transition-all duration-150 cursor-pointer text-sm">
               0x312Cc238A1388
             </span>
-            <h2 className="text-xl">1 CLION costs 0.05 ETH</h2>
+            <h2 className="text-xl">1 Mana-Maniac costs 0.05 ETH</h2>
             <span>Excluding gas fees</span>
             <span>Connect to the Ethereum network</span>
-            <button className="mint-page-btn">Connect</button>
+
+
+            <div id="connectButton">
+              <button className="mint-page-btn" onClick={Connect}>Connect</button>
+            </div>
+            
+            <div hidden id="mintButton"> 
+              <button  className="mint-page-btn" onClick={Mint}>Mint</button>
+              <input className="mint-page-btn-nmb" id="mintInput" type="number" min="1" max="10"></input>
+            </div>
+            
+
+            <div id="connectedAddress"></div>
+
+
             <Link href="/">
               <button className="mint-page-btn">Back</button>
             </Link>

@@ -11,7 +11,7 @@ const Roadmap = () => {
   return (
     <div
       id="roadmap"
-      className="text-4xl text-white bg-[#000000b3] py-16 flex flex-col text-center z-40 relative top-[200px] md:top-[400px] lg:top-[800px]"
+      className="text-4xl text-white bg-[#000000b3] py-16 flex flex-col text-center z-40 relative top-[300px] sm:top-[200px] md:top-[400px] lg:top-[800px]"
     >
       <Typewriter
         options={{

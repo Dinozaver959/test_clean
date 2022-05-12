@@ -45,7 +45,7 @@ const Faq = () => {
                 initial sale. At the time of purchase, a randomly selected NFT
                 will be minted on the blockchain and delivered to your wallet
                 and OpenSea account. Once the public sale is closed, you can get
-                a Crypto Lion on the secondary market (on OpenSea).
+                a Mana-Maniac on the secondary market (on OpenSea).
               </p>
             </AccordionItemPanel>
           </AccordionItem>
@@ -61,7 +61,7 @@ const Faq = () => {
                 Chrome browser and link your Ethereum wallet to it. Ensure you
                 have enough ETH in your wallet to cover the cost of a NFT plus
                 the associated transaction (gas) fees. Approve the transaction
-                on MetaMask and you are all set. The Crypto Lion will be
+                on MetaMask and you are all set. The Mana-Maniac will be
                 available to mint on our official website.
               </p>
             </AccordionItemPanel>
@@ -74,7 +74,7 @@ const Faq = () => {
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-              <p>9999 Unique Crypto Lions will be created.</p>
+              <p>10000 Unique Mana-Maniacs will be created.</p>
             </AccordionItemPanel>
           </AccordionItem>
           <AccordionItem className="mb-5 bg-[#b7ebf1] rounded-lg">

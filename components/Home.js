@@ -15,7 +15,7 @@ const Home = () => {
       <div className="mt-40">
         <Carrousel />
       </div>
-      <div className="pt-[50px] h-screen borde">
+      <div className="pt-[50px] h-screen">
         <div className="transform translate-y-[-8%]">
           <Image src={bg1} alt="bg1" />
         </div>
@@ -35,7 +35,7 @@ const Home = () => {
           <Image src={bg6} alt="bg6" />
         </div>
       </div>
-      <div className="absolute top-3/4 md:top-[100%] text-center w-full">
+      <div className="absolute top-[100%] text-center w-full">
         <Link href="/mint">
           <button className="mint-btn z-50">Mint</button>
         </Link>
