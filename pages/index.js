@@ -11,7 +11,7 @@ export default function index() {
   return (
     <div>
       <Head>
-        <title>Crypto Lions</title>
+        <title>Mana-Maniacs</title>
       </Head>
       <Navbar />
       <Home />
