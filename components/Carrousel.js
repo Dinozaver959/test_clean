@@ -58,7 +58,7 @@ const Product = () => {
       <div className="slider">
         <div className="slide-track">
           {firstRow.map((item, index) => (
-            <div className="slide">
+            <div className="slide" key={index}>
               <Image src={item.src} alt={item.alt} key={index} />
             </div>
           ))}
@@ -67,7 +67,7 @@ const Product = () => {
       <div className="slider-reverse">
         <div className="slide-track">
           {secondRow.map((item, index) => (
-            <div className="slide">
+            <div className="slide" key={index}>
               <Image src={item.src} alt={item.alt} key={index} />
             </div>
           ))}
@@ -76,7 +76,7 @@ const Product = () => {
       <div className="slider">
         <div className="slide-track">
           {thirdRow.map((item, index) => (
-            <div className="slide">
+            <div className="slide" key={index}>
               <Image src={item.src} alt={item.alt} key={index} />
             </div>
           ))}
