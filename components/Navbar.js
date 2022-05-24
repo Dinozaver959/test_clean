@@ -79,7 +79,7 @@ const Navbar = () => {
               </a>  
             </Link> 
 
-            <Link href="https://discord.gg/CBhxQDhV" passHref> 
+            <Link href="https://discord.gg/y2WY68JzEG" passHref> 
               <a target="_blank" rel="noopener noreferrer" className="nav-btn">
                 Discord
               </a>  
