@@ -22,7 +22,7 @@ const Roadmap = () => {
       />
       <p className="my-20 text-base md:text-lg tracking-wide leading-6 mx-auto max-w-[550px]">
         Pre-Mint Large scale Marketing budget <br /> <br />
-        Pre-Mint NFT + Whiteslot giveaways on our socials
+        Pre-Mint NFT + Whitelist giveaways on our socials
       </p>
       <div>
         <div className="roadmap">

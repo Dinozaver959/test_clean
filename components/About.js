@@ -24,7 +24,7 @@ const About = () => {
         Mana-Maniacs is a 10,000 unique NFT project, strictly designed to create
         community. These algorithmically generated Maniacs are a gateway to a
         world of endless possibilities and future community oriented projects. 
-        We invite you to be apart of the Lion community and 
+        We invite you to be apart of the Mana-Maniacs community and 
         join likeminded individuals ready to be apart of the future.
       </p>
       <div className="my-12 cards w-[250px] md:w-[550px] lg:w-[700px] xl:w-[950px] mx-auto">

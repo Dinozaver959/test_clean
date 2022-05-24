@@ -51,7 +51,7 @@ const Faq = () => {
           <AccordionItem className="mb-5 bg-[#b7ebf1] rounded-lg">
             <AccordionItemHeading>
               <AccordionItemButton className="bg-[#006b8b] rounded-lg text-white text-left p-4">
-                How to purshase an NFT?
+                How to purchase an NFT?
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
@@ -111,8 +111,8 @@ const Faq = () => {
             <AccordionItemPanel>
               <p>
                 Immediately - a wizard PFP & charitable donation to the Doge Pound Shelter /// 
-                Near Future Progression Perks - raffle ticket (up to 20 1ETH winners by the end of the mint when we hit certain milestones) 
-                & 2 free companion NFTs (Archer & Warrior), assuming we hit certain milestones as well
+                Near Future Progression Perks - raffle ticket (up to 20 1ETH winners by the end of the mint) 
+                & 2 free companion NFTs (Archer & Warrior)
               </p>
             </AccordionItemPanel>
           </AccordionItem>
