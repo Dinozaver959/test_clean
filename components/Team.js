@@ -1,7 +1,7 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import Image from 'next/image'
-import team1 from '../images/team1.png'
+import team1 from '../images/Priapus_pfp.jpg'
 import team2 from '../images/Lightss_pfp.png'
 import team3 from '../images/Dinozaver959_pfp.png'
 import { motion } from 'framer-motion'

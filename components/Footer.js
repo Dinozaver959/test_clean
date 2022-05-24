@@ -17,7 +17,7 @@ const Footer = () => {
           </a>  
         </Link> 
 
-        <Link href="https://discord.gg/CBhxQDhV" passHref> 
+        <Link href="https://discord.gg/y2WY68JzEG" passHref> 
           <a target="_blank" rel="noopener noreferrer">
           <Image src={discord} alt="discord_icon" height="40px" width="40px" />
           </a>  

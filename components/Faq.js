@@ -36,23 +36,22 @@ const Faq = () => {
           <AccordionItem className="mb-5 bg-[#b7ebf1] rounded-lg">
             <AccordionItemHeading>
               <AccordionItemButton className="bg-[#006b8b] rounded-lg text-white text-left p-4">
-                How Can I get an NFT ?
+                How Can I Get a Mana-Maniac?
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
               <p>
-                It will be available for purchase on our website through an
-                initial sale. At the time of purchase, a randomly selected NFT
-                will be minted on the blockchain and delivered to your wallet
-                and OpenSea account. Once the public sale is closed, you can get
-                a Mana-Maniac on the secondary market (on OpenSea).
+              It will be available for purchase on our website through an initial sale. 
+              At the time of purchase, a randomly selected NFT will be minted on the blockchain 
+              and delivered to your wallet and OpenSea account. Once the public sale is closed, 
+              you can get a Mana-Maniac on the secondary market like OpenSea or LooksRare.
               </p>
             </AccordionItemPanel>
           </AccordionItem>
           <AccordionItem className="mb-5 bg-[#b7ebf1] rounded-lg">
             <AccordionItemHeading>
               <AccordionItemButton className="bg-[#006b8b] rounded-lg text-white text-left p-4">
-                How to purshase One ?
+                How to purshase an NFT?
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
@@ -61,7 +60,7 @@ const Faq = () => {
                 Chrome browser and link your Ethereum wallet to it. Ensure you
                 have enough ETH in your wallet to cover the cost of a NFT plus
                 the associated transaction (gas) fees. Approve the transaction
-                on MetaMask and you are all set. The Mana-Maniac will be
+                on MetaMask and you are all set. The Mana-Maniacs will be
                 available to mint on our official website.
               </p>
             </AccordionItemPanel>
@@ -80,11 +79,14 @@ const Faq = () => {
           <AccordionItem className="mb-5 bg-[#b7ebf1] rounded-lg">
             <AccordionItemHeading>
               <AccordionItemButton className="bg-[#006b8b] rounded-lg text-white text-left p-4">
-                How much does it cost to mint an NFT ?
+                How much does it cost to mint an NFT...wen mint?
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-              <p>Mint Price will be 0.05 ETH + Gas</p>
+              <p>
+                Mint price will be 0.05 ETH + Gas. 0.025 ETH will go to the Doge Pound Shelter charity
+                ....Mint date has not been decided as of yet
+              </p>
             </AccordionItemPanel>
           </AccordionItem>
           <AccordionItem className="mb-5 bg-[#b7ebf1] rounded-lg">
@@ -97,6 +99,20 @@ const Faq = () => {
               <p>
                 Once minted, you&apos;ll just need to login into your OpenSea
                 account to view your NFTs.
+              </p>
+            </AccordionItemPanel>
+          </AccordionItem>
+          <AccordionItem className="mb-5 bg-[#b7ebf1] rounded-lg">
+            <AccordionItemHeading>
+              <AccordionItemButton className="bg-[#006b8b] rounded-lg text-white text-left p-4">
+                What do I get when I purchase a Mana-Maniac?
+              </AccordionItemButton>
+            </AccordionItemHeading>
+            <AccordionItemPanel>
+              <p>
+                Immediately - a wizard PFP & charitable donation to the Doge Pound Shelter /// 
+                Near Future Progression Perks - raffle ticket (up to 20 1ETH winners by the end of the mint when we hit certain milestones) 
+                & 2 free companion NFTs (Archer & Warrior), assuming we hit certain milestones as well
               </p>
             </AccordionItemPanel>
           </AccordionItem>
