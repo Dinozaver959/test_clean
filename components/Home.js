@@ -36,9 +36,18 @@ const Home = () => {
         </div>
       </div>
       <div className="absolute top-[100%] text-center w-full">
-        <Link href="/mint">
+
+
+
+        {/*   re-enable link once ready for minting
+        <Link href="/">
           <button className="mint-btn z-50">Mint</button>
-        </Link>
+        </Link> 
+        */}
+
+
+          <button className="mint-btn z-50">Mint</button>
+
       </div>
     </div>
   )
