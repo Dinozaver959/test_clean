@@ -21,10 +21,11 @@ const About = () => {
         }}
       />
       <p className="mt-12 text-xl tracking-wide leading-[1.9] mx-auto max-w-7xl">
-        Mana-Maniacs is a 10,000 unique NFT project, strictly designed to create
-        community. These algorithmically generated Maniacs are a gateway to a
+        Mana-Maniacs is a 10,000 unique NFT project, designed to create
+        community and to make a better world with our resources. 
+        These algorithmically generated Maniacs are a gateway to a
         world of endless possibilities and future community oriented projects. 
-        We invite you to be apart of the Mana-Maniacs community and 
+        We invite you to be a part of the Mana-Maniacs community and 
         join likeminded individuals ready to be apart of the future.
       </p>
       <div className="my-12 cards w-[250px] md:w-[550px] lg:w-[700px] xl:w-[950px] mx-auto">

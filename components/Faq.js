@@ -26,9 +26,9 @@ const Faq = () => {
             </AccordionItemHeading>
             <AccordionItemPanel>
               <p>
-                NFT stands for &apos;non-fungible token&apos;. A NFT is
+                NFT stands for &apos;non-fungible token&apos;. An NFT is
                 basically data that is accounted for in a digital ledger, and
-                that data represents something specific and unique. A NFT can,
+                that data represents something specific and unique. An NFT can,
                 for example, represent a unique piece of art or a game token.
               </p>
             </AccordionItemPanel>
@@ -58,7 +58,7 @@ const Faq = () => {
               <p>
                 The easiest way is to install a MetaMask extension in your
                 Chrome browser and link your Ethereum wallet to it. Ensure you
-                have enough ETH in your wallet to cover the cost of a NFT plus
+                have enough ETH in your wallet to cover the cost of an NFT plus
                 the associated transaction (gas) fees. Approve the transaction
                 on MetaMask and you are all set. The Mana-Maniacs will be
                 available to mint on our official website.
