@@ -27,6 +27,8 @@ const About = () => {
         world of endless possibilities and future community oriented projects. 
         We invite you to be a part of the Mana-Maniacs community and 
         join likeminded individuals ready to be apart of the future.
+
+        You can also find us on <a href="https://raritysniper.com/nft-drops-calendar">Rarity Sniper.</a>
       </p>
       <div className="my-12 cards w-[250px] md:w-[550px] lg:w-[700px] xl:w-[950px] mx-auto">
         <div className="flex mb-6 gap-x-6">

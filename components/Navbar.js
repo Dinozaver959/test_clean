@@ -10,14 +10,6 @@ const Navbar = () => {
   return (
     <div className="bg-[#000000b3] flex justify-between w-full h-24 z-50 fixed top-0">
 
-       {/*
-      <div className="w-32 mx-4 my-2">
-        
-        <Image src={logo} alt="Crypto Lions Logo" />
-       
-      </div>
-       */}
-
       {isOpen ? (
         <>
           <div className="absolute top-[96px] flex flex-col bg-[#000000b3] w-full p-8 items-start gap-y-4">  {/* top-[108px] */}
