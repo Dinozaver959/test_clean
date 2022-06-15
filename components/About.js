@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Typewriter from 'typewriter-effect'
 import card1 from '../images/card1_.png'
 import card2 from '../images/card2_.png'
-import card3 from '../images/card3__.png'
+import card3 from '../images/card3_.png'
 import card4 from '../images/card4_.png'
 import card5 from '../images/card5_.png'
 
