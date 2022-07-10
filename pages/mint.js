@@ -48,7 +48,7 @@ const mint = () => {      // need to figure out how to load {await CheckTotalSup
           >
             <h1 className="text-4xl">0/1000</h1>
             <span className="text-[#13d3ec] w-2/4 mx-auto hover:scale-110 transition-all duration-150 cursor-pointer text-sm">
-              <a href={"https://polygonscan.com/address/".concat(contractAddress)} target="_blank">
+              <a href={"https://polygonscan.com/address/".concat(contractAddress)} target="_blank" rel="noreferrer" alt="">
                 {contractAddress}
               </a>
             </span>
