@@ -73,7 +73,7 @@ const Faq = () => {
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-              <p>10000 Unique Mana-Maniacs will be created.</p>
+              <p>1000 Unique Mana-Maniacs will be created.</p>
             </AccordionItemPanel>
           </AccordionItem>
           <AccordionItem className="mb-5 bg-[#b7ebf1] rounded-lg">

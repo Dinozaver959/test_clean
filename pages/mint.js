@@ -10,10 +10,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-import {Connect, CheckTotalSupply, Mint, CheckSaleActive} from "../JS/local_web3"
+import {Connect, CheckTotalSupply, Mint, CheckSaleActive, contractAddress} from "../JS/local_web3"
 
 
-const mint = () => {
+const mint = () => {      // need to figure out how to load {await CheckTotalSupply()}
 
   return (
     <>
@@ -46,9 +46,11 @@ const mint = () => {
             transition={{ duration: 1 }}
             className="h-[60vh] absolute top-[20%] z-50 rounded-md w-10/12 mx-auto flex flex-col justify-center text-center max-w-[900px] shadow-md border-b-8 border-b-[#13d3ec] bg-black/50 text-white gap-y-4"
           >
-            <h1 className="text-4xl">0/10000</h1>
+            <h1 className="text-4xl">0/1000</h1>
             <span className="text-[#13d3ec] w-2/4 mx-auto hover:scale-110 transition-all duration-150 cursor-pointer text-sm">
-              0x312Cc238A1388
+              <a href={"https://polygonscan.com/address/".concat(contractAddress)} target="_blank">
+                {contractAddress}
+              </a>
             </span>
             <h2 className="text-xl">1 Mana-Maniac costs 0.05 ETH</h2>
             <span>Excluding gas fees</span>
@@ -61,11 +63,12 @@ const mint = () => {
             
             <div hidden id="mintButton"> 
               <button  className="mint-page-btn" onClick={Mint}>Mint</button>
-              <input className="mint-page-btn-nmb" id="mintInput" type="number" min="1" max="10"></input>
+              <input className="mint-page-btn-nmb" id="mintInput" type="number" min="1" max="10" defaultValue="1"></input>
             </div>
             
 
             <div id="connectedAddress"></div>
+            <div id="errors"></div>
 
 
             <Link href="/">

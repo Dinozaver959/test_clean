@@ -7,6 +7,10 @@ import roadmap3 from '../images/roadmap3.png'
 import roadmap4 from '../images/roadmap4.png'
 import roadmap5 from '../images/roadmap5.png'
 
+import roadmap1_new from '../images/roadmap1_new.png'
+import roadmap2_new from '../images/roadmap2_new.png'
+import roadmap3_new from '../images/roadmap3_new.png'
+
 const Roadmap = () => {
   return (
     <div
@@ -24,6 +28,8 @@ const Roadmap = () => {
         Pre-Mint Large scale Marketing budget <br /> <br />
         Pre-Mint NFT + Whitelist giveaways on our socials
       </p>
+      
+      {/* 
       <div>
         <div className="roadmap">
           <Image src={roadmap1} alt="roadmap1" />
@@ -41,6 +47,20 @@ const Roadmap = () => {
           <Image src={roadmap5} alt="roadmap5" />
         </div>
       </div>
+      */}
+
+      <div>
+        <div className="roadmap">
+          <Image src={roadmap1_new} alt="roadmap1" />
+        </div>
+        <div className="roadmap md:!mr-[30%]">
+          <Image src={roadmap2_new} alt="roadmap2" />
+        </div>
+        <div className="roadmap">
+          <Image src={roadmap3_new} alt="roadmap3" />
+        </div>
+      </div>
+
     </div>
   )
 }

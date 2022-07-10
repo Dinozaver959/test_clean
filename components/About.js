@@ -21,7 +21,7 @@ const About = () => {
         }}
       />
       <p className="mt-12 text-xl tracking-wide leading-[1.9] mx-auto max-w-7xl">
-        Mana-Maniacs is a 10,000 unique NFT project, designed to create
+        Mana-Maniacs is a 1,000 unique NFT project, designed to create
         community and to make a better world with our resources. 
         These algorithmically generated Maniacs are a gateway to a
         world of endless possibilities and future community oriented projects. 
