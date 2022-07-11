@@ -41,6 +41,7 @@ const Faq = () => {
             </AccordionItemHeading>
             <AccordionItemPanel>
               <p>
+              Mint date: mint date: July 21st 6pm UTC
               It will be available for purchase on our website through an initial sale. 
               At the time of purchase, a randomly selected NFT will be minted on the blockchain 
               and delivered to your wallet and OpenSea account. Once the public sale is closed, 
@@ -110,9 +111,8 @@ const Faq = () => {
             </AccordionItemHeading>
             <AccordionItemPanel>
               <p>
-                Immediately - a wizard PFP & charitable donation to the Doge Pound Shelter /// 
-                Near Future Progression Perks - raffle ticket (up to 20 1ETH winners by the end of the mint) 
-                & 2 free companion NFTs (Archer & Warrior)
+                Immediately - a wizard PFP & charitable donation to the Doge Pound Shelter 
+                & 2 free companion NFTs (Archer & Warrior) once we sell out 1000 wizards
               </p>
             </AccordionItemPanel>
           </AccordionItem>
