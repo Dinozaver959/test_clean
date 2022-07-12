@@ -41,7 +41,7 @@ const Faq = () => {
             </AccordionItemHeading>
             <AccordionItemPanel>
               <p>
-              Mint date: mint date: July 21st 6pm UTC
+              Mint date: July 21st 6pm UTC
               It will be available for purchase on our website through an initial sale. 
               At the time of purchase, a randomly selected NFT will be minted on the blockchain 
               and delivered to your wallet and OpenSea account. Once the public sale is closed, 
@@ -86,7 +86,7 @@ const Faq = () => {
             <AccordionItemPanel>
               <p>
                 Mint price will be 0.05 ETH + Gas. 0.025 ETH will go to the Doge Pound Shelter charity
-                ....Mint date has not been decided as of yet
+                ....Mint date: July 21st 6pm UTC
               </p>
             </AccordionItemPanel>
           </AccordionItem>
