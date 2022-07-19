@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
 import bg1 from '../images/bg1.png'
 import bg2 from '../images/bg2.png'
@@ -10,10 +10,33 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-import {Connect, CheckTotalSupply, Mint, CheckSaleActive, contractAddress} from "../JS/local_web3"
+import {Connect, CheckTotalSupply, Mint, CheckSaleActive, CheckHowManyMintedSoFar, contractAddress} from "../JS/local_web3"
 
 
-const mint = () => {      // need to figure out how to load {await CheckTotalSupply()}
+async function MintedSoFar(){
+  const minted__ = await CheckHowManyMintedSoFar();
+  return minted__;
+}
+
+
+export default function Mint_() {
+// const Mint_ = () => {      // need to figure out how to load {await CheckTotalSupply()}
+
+  const [minted, setMinted] = useState(false);          // need to force update on   A) wallet change   
+
+  useEffect(() => {
+
+    const fetchData = async () => {
+      let minted_ = await MintedSoFar();
+      console.log("min.js: " + minted_);
+      setMinted(minted_);
+    }
+    
+    fetchData()
+    // make sure to catch any errors
+    .catch(console.error);;
+
+  }, []);
 
   return (
     <>
@@ -46,7 +69,7 @@ const mint = () => {      // need to figure out how to load {await CheckTotalSup
             transition={{ duration: 1 }}
             className="h-[60vh] absolute top-[20%] z-50 rounded-md w-10/12 mx-auto flex flex-col justify-center text-center max-w-[900px] shadow-md border-b-8 border-b-[#13d3ec] bg-black/50 text-white gap-y-4"
           >
-            <h1 className="text-4xl">0/1000</h1>
+            {/* <h1 className="text-4xl">{minted}/1000</h1> */}
             <span className="text-[#13d3ec] w-2/4 mx-auto hover:scale-110 transition-all duration-150 cursor-pointer text-sm">
               <a href={"https://polygonscan.com/address/".concat(contractAddress)} target="_blank" rel="noreferrer" alt="">
                 {contractAddress}
@@ -81,4 +104,3 @@ const mint = () => {      // need to figure out how to load {await CheckTotalSup
   )
 }
 
-export default mint

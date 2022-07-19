@@ -30,8 +30,8 @@ contract ManaManiacsNFT is Ownable, ERC721A, ReentrancyGuard {
 
   modifier onlyTeam() {
     require(
-      _msgSender() == owner() || _msgSender() == 0x1591C783EfB2Bf91b348B6b31F2B04De1442836c,  //... add more addresses that will get royalties (fail-safe so that anyone on the team can initiate the withdrawal)
-      "Ownable: caller is not the owner neither the platform"
+      _msgSender() == owner() || _msgSender() == 0x1591C783EfB2Bf91b348B6b31F2B04De1442836c || _msgSender() == 0x53226060E28F38e62CB7023A7Add4a1e06a51C58 ,  //... add more addresses that will get royalties (fail-safe so that anyone on the team can initiate the withdrawal)
+      "Ownable: caller is not part of the team"
     );
     _;
   }
@@ -64,7 +64,7 @@ contract ManaManiacsNFT is Ownable, ERC721A, ReentrancyGuard {
 
 
   // metadata URI
-  string private _baseTokenURI = "https://app.easylaunchnft.com/api/CONTRACT_NAME/";          // update this,  added paths are:  'rare' and 'common' -> just manually upload them to the IPFS
+  string private _baseTokenURI = "https://easylaunchnftdospace1.fra1.digitaloceanspaces.com/ManaManiacs_json/";          // update this,  added paths are:  'rare' and 'common' -> just manually upload them to the IPFS
 
   function _baseURI() internal view virtual override returns (string memory) {
     return _baseTokenURI;
@@ -95,16 +95,15 @@ contract ManaManiacsNFT is Ownable, ERC721A, ReentrancyGuard {
 
   function withdraw() external onlyTeam nonReentrant {
 
-    address user1=0x1591C783EfB2Bf91b348B6b31F2B04De1442836c;
-    uint256 user1_ROYALTY=150;
-    address user2=0x1591C783EfB2Bf91b348B6b31F2B04De1442836c;
-    uint256 user2_ROYALTY=250;
-    address user3=0x1591C783EfB2Bf91b348B6b31F2B04De1442836c;
-    uint256 user3_ROYALTY=100;
-    address user4=0x1591C783EfB2Bf91b348B6b31F2B04De1442836c;
-    uint256 user4_ROYALTY=500;
+    address user1=0x21F173672edE7B5192f0cCa428403422E9f3dB59;
+    uint256 user1_ROYALTY=50;
+    address user2=0x53226060E28F38e62CB7023A7Add4a1e06a51C58;
+    uint256 user2_ROYALTY=30;
+    address user3=0x2e4C1FC1f91d5d7b7E4980fF9144f5a1413e908E;
+    uint256 user3_ROYALTY=20;
 
-    uint256 balanceUnits = address(this).balance / 1000;
+
+    uint256 balanceUnits = address(this).balance / 100;
 
     Address.sendValue(
       payable(user1),
@@ -121,10 +120,6 @@ contract ManaManiacsNFT is Ownable, ERC721A, ReentrancyGuard {
       user3_ROYALTY * balanceUnits
     );
 
-    Address.sendValue(
-      payable(user4),
-      user4_ROYALTY * balanceUnits
-    );
   }
 
 }

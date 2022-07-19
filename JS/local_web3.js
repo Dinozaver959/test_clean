@@ -3,8 +3,8 @@ import {ABI} from "./ABI.js"
 const Web3 = require('web3');
 
 var connectedAddress;
-export const contractAddress = "0xb1bc4CeC54c40672E0d60034252F23d228195311";
-const network = "polygon";
+export const contractAddress = "0x34746e4e45fea2b2b7a2718a96b73a5d7fa45ab1";
+const network = "homestead";
 
 
 async function UpdateConnectedAddrress() {
@@ -44,8 +44,6 @@ export async function Connect() {
 
 
 export async function CheckTotalSupply() {
-  await UpdateConnectedAddrress();
-  await HandleNetworkSwitch(network);
   const smartContract = await InitializeSmartContract();
 
   if(smartContract){
@@ -59,6 +57,21 @@ export async function CheckTotalSupply() {
   }
 }
 
+export async function CheckHowManyMintedSoFar() {
+  const smartContract = await InitializeSmartContract();
+
+  if(smartContract){
+    smartContract.methods.totalSupply().call(function (err, res) {
+      if (err) {
+        console.log("An error occured", err)
+        return
+      }
+      console.log("Total supply: ", res)
+      return res;
+    });
+  }
+}
+
 
 export async function Mint() {
   await UpdateConnectedAddrress();
@@ -68,7 +81,7 @@ export async function Mint() {
   if(smartContract){
 
     // Check if Mint is open                                               // first check if mint is open
-    smartContract.methods.publicSaleActive().call(function (err, res) {
+    smartContract.methods.SaleActive().call(function (err, res) {
       if (err) {
         console.log("An error occured", err)
         return
@@ -96,7 +109,7 @@ export async function Mint() {
             value: res * numTokens       // value: web3.utils.toWei(0.1, 'ether'),     // needs to be specified -> we can send a read Tx to the blockchain
           }
 
-          smartContract.methods.publicSaleMint(numTokens)   // Mint
+          smartContract.methods.Mint(numTokens)   // Mint
             .send(parameters, function (err, res) {
               if (err) {
                 console.log("An error occured", err)

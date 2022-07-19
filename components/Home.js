@@ -39,11 +39,11 @@ const Home = () => {
 
 
 
-        {/*   re-enable link once ready for minting
+        {/*   re-enable link once ready for minting */}
         <Link href="/">
           <button className="mint-btn z-50">Mint</button>
         </Link> 
-        */}
+        
 
 
           <button className="mint-btn z-50">Mint</button>
